@@ -1,0 +1,370 @@
+html {
+    min-width: 600px;
+    font-size: small;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(46, 55, 63)
+}
+
+body * {
+    font-family: sans-serif;
+    margin: 0.2em;
+}
+
+
+header {
+    position: relative;
+    background-image: linear-gradient(120deg, rgb(46, 55, 63), rgb(200, 200, 200));
+
+}
+
+header img {
+    position: absolute;
+    top: 5%;
+    width: 5%;
+}
+
+header h1 {
+    color: lightcyan;
+    font-size: 300%;
+    margin: 0.5em;
+}
+
+.tagline {
+    font-size: small;
+    color: gainsboro;
+}
+
+nav {
+    display: flex;
+    top: 0%;
+    left: 15%;
+}
+
+.menu {
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+}
+
+.menu>li {
+    display: inline-flex;
+    justify-content: left;
+    text-decoration: none;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 3em;
+    left: 4em;
+    z-index: 999;
+    text-decoration: none;
+}
+
+.sub-menu li {
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(46, 55, 63);
+    color: lightgrey;
+    width: 10em;
+    margin: 0%;
+    padding: 0.5em;
+    border: 0.1em lightgrey solid;
+}
+
+.menu li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a,
+nav li {
+    margin: 0.1em;
+    padding: 0.5em;
+    text-decoration: none;
+    color: lightcyan;
+
+}
+
+nav a:hover,
+nav li:hover {
+    background-color: lightgray;
+    color: darkblue;
+}
+
+.hero {
+    position: relative;
+    padding: 0%;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.hero-text {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    margin: 0%;
+}
+
+main {
+    background-color: floralwhite;
+    flex-basis: 80%;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 1em;
+}
+
+footer h2 {
+    text-align: left;
+    margin: 0%;
+    font-size: 1.2em;
+}
+
+#announce-section {
+    display: flex;
+}
+
+#announce-section img {
+    height: 10em;
+    clip-path: circle(35% at 50% 35%);
+}
+
+.main-section {
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+}
+
+footer {
+    background-image: linear-gradient(120deg, floralwhite, rgb(170, 170, 170));
+    padding: 1em;
+}
+
+footer a{
+    color: darkblue;
+}
+
+section {
+    padding: 1em;
+}
+
+.main-section * {
+    font-size: x-large;
+}
+
+#right-section {
+    flex-basis: 20%;
+    background-image: url("../img/Cognitive_bias_codex_en.png");
+    background-repeat: no-repeat;
+    padding: 0.1em;
+
+}
+
+#right-section a {
+    font-size: 0.8em;
+    color: darkblue;
+}
+
+
+.award-table {
+    margin: auto;
+    text-align: center;
+    border: 0.1em gray solid;
+    border-collapse: collapse;
+}
+
+.award-table * {
+    padding: 0.5em;
+    border: 0.1em gray solid;
+    border-collapse: collapse;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 5px;
+    background-color: gray;
+}
+
+.gallery figcaption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.gallery * {
+    margin: 0px;
+}
+
+figure img {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.gallery figure {
+    position: relative;
+}
+
+#figure_01 {
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+#figure_02 {
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+#figure_03 {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+}
+
+#figure_04 {
+    clip-path: polygon(5% 0%, 95% 0%, 85% 50%, 90% 100%, 5% 100%, 0% 50%);
+}
+
+#figure_05 {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 90% 100%, 5% 100%, 0% 50%);
+}
+
+#figure_06 {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 90% 100%, 5% 100%, 15% 50%);
+}
+
+#figure_07 {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+}
+
+#figure_08 {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+#figure_09 {
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.video-section {
+    position: relative;
+    overflow: hidden;
+    padding: 0%;
+    padding-top: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0%;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: medium;
+    }
+
+    .menu {
+        font-size: 2em;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    #announce-section {
+        flex-direction: column;
+    }
+
+    #announce-section img {
+        width: 10em;
+        height: auto;
+        clip-path: none;
+        margin: auto;
+    }
+
+    #right-section {
+        background-image: url("../img/Cognitive_bias_codex_medium.png");
+        background-size: cover;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: large;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .hero-text {
+        font-size: 2em;
+    }
+
+    .menu {
+        font-size: 2em;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    #announce-section {
+        flex-direction: column;
+    }
+
+    #announce-section img {
+        width: 10em;
+        height: auto;
+        clip-path: none;
+        margin: auto;
+    }
+
+    #right-section {
+        background-image: url("../img/Cognitive_bias_codex_small.png");
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
